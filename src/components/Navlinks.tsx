@@ -24,7 +24,7 @@ const NavLinks = ({ closeNavLinks }: NavLinkProp) => {
                     onClick={closeNavLinks} 
                     to={link.url} 
                     className={`font-semibold text-2xl lg:text-lg lg:font-normal ${
-                        location.pathname === link.url ? 'border-b border-black' : ''
+                        location.pathname === link.url ? 'lg:border-b border-black' : ''
                     }`}
                 >
                     {link.name}
