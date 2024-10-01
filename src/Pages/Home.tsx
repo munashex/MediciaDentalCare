@@ -3,8 +3,16 @@ import { FaStarOfLife } from "react-icons/fa6";
 import aestheticCare from '../images/aestheticcare.avif' 
 import dentalimpact from '../images/dentalimpact.avif'
 import Services from '../components/services';
+import OurDentists from '../components/OurDentists';
+import Testimonals from '../components/Testimonials';
+import Contact from '../components/Contact';
+import Faq from '../components/Faq'; 
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+  const navigate = useNavigate()
+
   return (
     <div className="mt-7">
       {/* top content */}
@@ -24,11 +32,11 @@ function Home() {
             <h1 className="text-lg text-[#4d4f57]">Choose Our Dental Clinic as Your Go-To Destination for Trusted and Compassionate Dental Health Solutions. Your Smile Is More Than Just Teeth to Us—It's</h1>
             
             <div className="space-y-4">
-              <button className="w-full text-[#3E4146] hover:bg-black hover:text-white inline-flex items-center gap-2.5 p-3 border-dotted rounded-full border-black border-2" >
+              <button onClick={() => navigate("/appointment")} className="w-full text-[#3E4146] hover:bg-black hover:text-white inline-flex items-center gap-2.5 p-3 border-dotted rounded-full border-black border-2" >
                 <FaStarOfLife size={28} color="#30B9B9"/>
                 <span className="text-xl font-semibold">Book Now</span>
               </button>
-              <button className="w-full text-[#3E4146] hover:bg-black hover:text-white inline-flex items-center gap-2.5 p-3 rounded-full border-dotted border-black border-2" >
+              <button onClick={() => navigate("/doctors")} className="w-full text-[#3E4146] hover:bg-black hover:text-white inline-flex items-center gap-2.5 p-3 rounded-full border-dotted border-black border-2" >
                 <FaStarOfLife size={28} color="#30B9B9"/>
                 <span className="text-xl font-semibold">Discover</span>
               </button>
@@ -62,7 +70,26 @@ function Home() {
       <Services/>
       </div>
 
-      
+      {/* dentists section */}
+      <div className="mt-20 lg:mt-24">
+        <OurDentists/>
+      </div>
+
+
+      {/* Testimonials section */}
+      <div className="mt-20 lg:mt-24">
+        <Testimonals/>
+      </div>
+       
+       {/* contact section */}
+      <div className="mt-20 lg:mt-24"> 
+        <Contact/>
+      </div> 
+        
+        {/* faq section  */}
+      <div className="mt-20 lg:mt-24">
+        <Faq/>
+      </div>
     </div>
   )
 }
