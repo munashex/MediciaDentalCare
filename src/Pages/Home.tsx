@@ -9,6 +9,7 @@ import Contact from '../components/Contact';
 import Faq from '../components/Faq'; 
 import { useNavigate } from 'react-router-dom';
 
+
 function Home() {
 
   const navigate = useNavigate()
@@ -90,6 +91,8 @@ function Home() {
       <div className="mt-20 lg:mt-24">
         <Faq/>
       </div>
+      
+  
     </div>
   )
 }
