@@ -10,6 +10,7 @@ import AnimatedTestimonials from '../components/animatedTestimonials';
 import Testimonals from '../components/Testimonials';
 import Contact from '../components/Contact';
 
+
 const About = () => {
   const navigate = useNavigate() 
 
