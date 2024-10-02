@@ -8,6 +8,7 @@ import Testimonals from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Faq from '../components/Faq'; 
 import { useNavigate } from 'react-router-dom';
+import AnimatedTestimonials from '../components/animatedTestimonials';
 
 
 function Home() {
@@ -50,7 +51,7 @@ function Home() {
                   <h1 className="text-xl font-bold text-[#26292F]">Dental</h1>
                   <h1 className="text-xl font-bold text-[#26292F]">Implant</h1>
                 </div>
-                <img src={dentalimpact} className="w-20"/>
+                <img src={dentalimpact} className="w-20 mix-blend-multiply"/>
               </div>
 
               <div className="p-3 w-full bg-[#FFD7F2] rounded-2xl flex flex-row justify-between">
@@ -78,9 +79,14 @@ function Home() {
 
 
       {/* Testimonials section */}
-      <div className="mt-20 lg:mt-24">
+      <div className="mt-20 flex lg:hidden">
         <Testimonals/>
       </div>
+
+        {/* animated Testimonials on lg screens */}
+        <div className="mt-24 hidden lg:flex">
+          <AnimatedTestimonials/>
+        </div>
        
        {/* contact section */}
       <div className="mt-20 lg:mt-24"> 

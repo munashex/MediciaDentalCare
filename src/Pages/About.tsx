@@ -6,7 +6,6 @@ import aboutImage2 from '../images/aboutImage2.avif'
 import aboutImage3 from '../images/aboutImage3.avif'
 import Faq from '../components/Faq';
 import OurDentists from '../components/OurDentists';
-import AnimatedTestimonials from '../components/animatedTestimonials';
 import Testimonals from '../components/Testimonials';
 import Contact from '../components/Contact';
 
@@ -104,13 +103,10 @@ const About = () => {
         <OurDentists/> 
        </div>
 
-        {/* animated testimonials on lg screens */}
-      <div className="mt-24 hidden lg:flex">
-       <AnimatedTestimonials/>
-      </div>
+       
       
       {/* regular testimonials section on sm and md */}
-      <div className="mt-20 flex lg:hidden">
+      <div className="mt-20 lg:mt-24">
          <Testimonals/>
       </div>
 

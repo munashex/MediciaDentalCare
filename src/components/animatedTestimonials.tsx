@@ -24,7 +24,7 @@ const AnimatedTestimonials = () => {
           {animatedTestimonals.map((testimonial) => (
             <div 
               key={testimonial.name}
-              className={`h-full ${testimonial.name === tab ? 'w-10/12' : 'w-1/6'} transition-all duration-300 ease-in-out`}
+              className={`h-full ${testimonial.name === tab ? 'w-10/12' : 'w-1/6 mix-blend-luminosity'} transition-all duration-300 ease-in-out`}
               onMouseEnter={() => setTab(testimonial.name as TabsTypes)}
             > 
               <img 

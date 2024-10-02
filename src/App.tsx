@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar"
 import About from './Pages/About'
 import Doctors from "./Pages/Doctors" 
 import Appointment from "./Pages/Appointment"
+import Services from "./Pages/Services" 
+import Faqs from "./Pages/Faqs"
+import Footer from "./components/Footer"
 
 const App = () => {
 
@@ -16,7 +19,10 @@ const App = () => {
           <Route path="/about" element={<About/>}/> 
           <Route path="/doctors" element={<Doctors/>}/>
           <Route path="/appointment" element={<Appointment/>}/>
+          <Route path="/services" element={<Services/>}/> 
+          <Route path="/faq"  element={<Faqs/>}/>
           </Routes>
+          <Footer/>
       </Router> 
       </div>
   )

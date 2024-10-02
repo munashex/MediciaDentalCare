@@ -22,7 +22,7 @@ const changeTab = (name: TabsTypes) => {
          <div className="gap-y-2 mb-11 flex flex-col items-center">
             <h1 className="text-2xl text-center font-semibold">{findServices?.name}</h1> 
             <h1 className="text-center">{findServices?.description}</h1>
-            <img src={findServices?.image} className="w-48 mt-3" />
+            <img src={findServices?.image} className="w-48 mt-3 mix-blend-multiply" />
          </div>
           {services.map((service) => (
             <div key={service.id}> 
@@ -57,7 +57,7 @@ const changeTab = (name: TabsTypes) => {
     </div>
     
     <div className="w-[40%] flex items-center">
-      <img src={findServices?.image} className='w-full h-auto object-contain' alt={findServices?.name} />
+      <img src={findServices?.image} className='w-full h-auto object-contain mix-blend-multiply' alt={findServices?.name} />
     </div>
   </div>
 </div>
