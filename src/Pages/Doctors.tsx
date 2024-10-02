@@ -53,7 +53,7 @@ const navigate = useNavigate()
            <h1 className="text-xl">{doctor.occupation}</h1> 
            <h1 className="text-2xl lg:text-3xl font-bold">{doctor.name}</h1> 
            <h1>{doctor.description}</h1> 
-           <button onClick={() => navigate('/appointment')} className="text-xl flex items-center gap-x-3 border-2 p-3 transition-all ease-in-out duration-300 delay-300 hover:text-white rounded-full hover:bg-[#D7A7CA] border-[#D7A7CA] mt-3 lg:text-2xl font-semibold"> 
+           <button onClick={() => navigate('/appointment')} className="text-xl flex items-center gap-x-3 border p-3 transition-all ease-in-out duration-300 delay-300 hover:text-white rounded-full hover:bg-[#D7A7CA] border-[#D7A7CA] mt-3 lg:text-2xl font-semibold"> 
             Appointment 
             <span className="border-2 border-dotted p-1 rounded-full border-[#66475C]">
               <MdArrowOutward size={35} color="#66475C"/>

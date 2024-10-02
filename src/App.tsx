@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Pages/Home" 
 import Navbar from "./components/Navbar"
 import About from './Pages/About'
-import Doctors from "./Pages/Doctors"
+import Doctors from "./Pages/Doctors" 
+import Appointment from "./Pages/Appointment"
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home/>}/> 
           <Route path="/about" element={<About/>}/> 
           <Route path="/doctors" element={<Doctors/>}/>
+          <Route path="/appointment" element={<Appointment/>}/>
           </Routes>
       </Router> 
       </div>
