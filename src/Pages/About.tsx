@@ -23,18 +23,18 @@ const About = () => {
           className="rounded-2xl w-full h-64 object-cover md:h-96 lg:h-96"
         />
         <div className="absolute inset-0 flex md:hidden items-center justify-center"> 
-          <h1 className="text-4xl md:text-5xl font-bold text-white bg-[#828584] py-4 px-8 bg-opacity-70 rounded-full">
+          <h1 className="text-4xl animate-fade-right animate-delay-1000 animate-duration-1000  md:text-5xl font-bold text-white bg-[#828584] py-4 px-8 bg-opacity-70 rounded-full">
             About
           </h1>
         </div>
 
         <div>
-          <h1 className="text-5xl lg:text-7xl hidden md:flex left-5 absolute top-10 w-min font-bold text-white bg-[#828584] py-4 px-8 bg-opacity-70 rounded-2xl">
+          <h1 className="text-5xl lg:text-7xl animate-fade-right animate-delay-1000 animate-duration-1000 hidden md:flex left-5 absolute top-10 w-min font-bold text-white bg-[#828584] py-4 px-8 bg-opacity-70 rounded-2xl">
             About
           </h1>
           <button 
             onClick={() => navigate('/appointment')} 
-            className="text-3xl lg:text-4xl gap-5 hidden md:flex items-center absolute right-6 bottom-6 font-bold text-white bg-[#DDACCB] py-4 px-8 rounded-2xl"
+            className="text-3xl lg:text-4xl gap-5 hidden animate-fade-left animate-delay-1000 animate-duration-1000 md:flex items-center absolute right-6 bottom-6 font-bold text-white bg-[#DDACCB] py-4 px-8 rounded-2xl"
           >
             Appointment  
             <span className="border-2 border-dotted p-1 rounded-full border-[#66475C]">
@@ -49,7 +49,7 @@ const About = () => {
         {aboutServices.map((service) => (
           <div 
             key={service.name}
-            className={`border  ${service.border} ${service.outColor} flex flex-col items-center transition ease-in-out delay-100 duration-500 lg:hover:scale-110 justify-center gap-1 p-5 md:p-8 rounded-3xl`}
+            className={`border  ${service.border} ${service.outColor} flex  flex-col items-center transition ease-in-out delay-100 duration-500 lg:hover:scale-110 justify-center gap-1 p-5 md:p-8 rounded-3xl`}
           > 
             <h1 className="text-[#353D4C] text-lg md:text-xl lg:text-3xl font-semibold">
               {service.name}

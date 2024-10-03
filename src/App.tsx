@@ -6,7 +6,8 @@ import Doctors from "./Pages/Doctors"
 import Appointment from "./Pages/Appointment"
 import Services from "./Pages/Services" 
 import Faqs from "./Pages/Faqs"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer" 
+import NotFound from "./Pages/NotFound"
 
 const App = () => {
 
@@ -20,7 +21,8 @@ const App = () => {
           <Route path="/doctors" element={<Doctors/>}/>
           <Route path="/appointment" element={<Appointment/>}/>
           <Route path="/services" element={<Services/>}/> 
-          <Route path="/faq"  element={<Faqs/>}/>
+          <Route path="/faq"  element={<Faqs/>}/> 
+          <Route path="*" element={<NotFound/>}/>
           </Routes>
           <Footer/>
       </Router> 

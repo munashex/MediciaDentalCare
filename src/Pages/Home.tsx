@@ -19,7 +19,7 @@ function Home() {
     <div className="mt-7">
       {/* top content */}
       <div> 
-        <h1 className="font-bold text-4xl lg:text-6xl text-[#26292F">A dream smile is a reality.</h1>
+        <h1 className="font-bold text-4xl lg:text-6xl text-[#26292F animate-ease animate-fade-right animate-delay-500 animate-duration-500">A dream smile is a reality.</h1>
          
          <div className="mt-8 flex flex-col lg:flex-row gap-7">
            <video 
@@ -28,12 +28,12 @@ function Home() {
             autoPlay
             playsInline
             loop
-            className="rounded-2xl lg:w-1/2"
+            className="rounded-2xl lg:w-1/2 animate-fade-right animate-delay-700 animate-duration-700 animate-ease-in-out"
           />
           <div className="flex flex-col gap-7 lg:w-1/2">
-            <h1 className="text-lg text-[#4d4f57]">Choose Our Dental Clinic as Your Go-To Destination for Trusted and Compassionate Dental Health Solutions. Your Smile Is More Than Just Teeth to Us—It's</h1>
+            <h1 className="text-lg text-[#4d4f57] animate-fade-down animate-ease animate-delay-[1s] animate-duration-[1s]">Choose Our Dental Clinic as Your Go-To Destination for Trusted and Compassionate Dental Health Solutions. Your Smile Is More Than Just Teeth to Us—It's</h1>
             
-            <div className="space-y-4">
+            <div className="space-y-4 animate-fade-left animate-delay-500 animate-duration-500 animate-ease-out">
               <button onClick={() => navigate("/appointment")} className="w-full text-[#3E4146] hover:bg-black hover:text-white inline-flex items-center gap-2.5 p-3 border-dotted rounded-full border-black border-2" >
                 <FaStarOfLife size={28} color="#30B9B9"/>
                 <span className="text-xl font-semibold">Book Now</span>
@@ -44,7 +44,7 @@ function Home() {
               </button>
             </div>
 
-            <div className="flex flex-col gap-3 lg:flex-row w-full">
+            <div className="flex flex-col gap-3 lg:flex-row w-full animate-fade-left animate-delay-1000 animate-ease-linear animate-duration-1000">
               <div className="p-3 w-full bg-[#D7FFE9] rounded-2xl flex flex-row justify-between">
                 <div>
                  <FaStarOfLife size={30} color="#26292F" className="animate-spin-slow"/>
