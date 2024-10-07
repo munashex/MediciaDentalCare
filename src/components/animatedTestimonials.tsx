@@ -1,10 +1,10 @@
 import { animatedTestimonals } from "../data/testimonials"
 import { useState } from "react"
 
-type TabsTypes = 'Mike Baker' | 'Linda Wilson' | 'Emily K' | 'Emily Johnson' | 'Peter Thompson'
+type TabsTypes = 'Sarah Baker' | 'Linda Wilson' | 'Emily K' | 'Emily Johnson' | 'Peter Thompson'
 
 const AnimatedTestimonials = () => {
-  const [tab, setTab] = useState<TabsTypes>('Mike Baker')  
+  const [tab, setTab] = useState<TabsTypes>('Sarah Baker')  
   const findActiveTab = animatedTestimonals.find((person) => person.name === tab)
 
   return (
