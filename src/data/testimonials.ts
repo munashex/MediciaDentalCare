@@ -39,7 +39,7 @@ import animated5 from '../images/animatedTest5.avif'
  const animatedTestimonals = [
     {
     image: animated1,
-    name: "Mike Baker", 
+    name: "Sarah Baker", 
     occupation: "Student", 
     description: "Complex procedure went perfectly. Dr. Martinez is an expert, caring support staff, excellent follow-up care. Outstanding service!"
    },
